@@ -1,7 +1,0 @@
-FROM python:latest
-
-WORKDIR /code
-
-COPY ./hello.py /code
-
-CMD ["python", "hello.py"]
