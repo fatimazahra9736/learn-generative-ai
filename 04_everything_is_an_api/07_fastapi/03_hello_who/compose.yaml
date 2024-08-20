@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  body:
+    container_name: body
+    hostname: body
+    build: 
+      context: ./03_body
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./03_body:/app/
