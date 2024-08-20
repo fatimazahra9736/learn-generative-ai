@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  myproject:
+    container_name: to-do
+    hostname: todo
+    build:
+      context: ./my-project
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./my-project:/code/
