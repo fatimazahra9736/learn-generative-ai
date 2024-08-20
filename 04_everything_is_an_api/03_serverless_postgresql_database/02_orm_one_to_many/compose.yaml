@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  orm:
+    container_name: orm
+    hostname: orm
+    build: 
+      context: ./code
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./code:/app/

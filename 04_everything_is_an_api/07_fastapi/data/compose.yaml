@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  user:
+    container_name: user
+    hostname: user
+    build: 
+      context: ./user
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./user:/app/
+  
+  product:
+    container_name: product
+    hostname: product
+    build: 
+      context: ./product
+      dockerfile: Dockerfile
+    ports:
+      - 8001:8000
+    volumes:
+      - ./product:/app/
+
+  notification:
+    container_name: notification
+    hostname: notification
+    build: 
+      context: ./notification
+      dockerfile: Dockerfile
+    ports:
+      - 8002:8000
+    volumes:
+      - ./notification:/app/
