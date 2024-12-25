@@ -12,43 +12,43 @@ services:
     volumes:
       - ./hello1:/app/
 
-  # hello2:
-  #   container_name: hello_2
-  #   hostname: hello_2
-  #   build: 
-  #     context: ./hello2
-  #   ports:
-  #     - "8001:8000"
-  #   volumes:
-  #     - ./hello2:/app/
+  hello2:
+    container_name: hello_2
+    hostname: hello_2
+    build: 
+      context: ./hello2
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./hello2:/app/
 
-  # hello3:
-  #   container_name: hello_3
-  #   hostname: hello_3
-  #   build: 
-  #     context: ./hello3
-  #   ports:
-  #     - "8002:8000"
-  #   volumes:
-  #     - ./hello3:/app/
+  hello3:
+    container_name: hello_3
+    hostname: hello_3
+    build: 
+      context: ./hello3
+    ports:
+      - "8002:8000"
+    volumes:
+      - ./hello3:/app/
       
-  # hello4:
-  #   container_name: hello_4
-  #   hostname: hello_4
-  #   build: 
-  #     context: ./hello4
-  #   ports:
-  #     - "8003:8000"
-  #   volumes:
-  #     - ./hello4:/app/
+  hello4:
+    container_name: hello_4
+    hostname: hello_4
+    build: 
+      context: ./hello4
+    ports:
+      - "8003:8000"
+    volumes:
+      - ./hello4:/app/
 
-  # hello5:
-  #   container_name: hello_5
-  #   hostname: hello_5
-  #   build: 
-  #     context: ./hello5
-  #   ports:
-  #     - "8004:8000"
-  #   volumes:
-  #     - ./hello5:/app/
+  hello5:
+    container_name: hello_5
+    hostname: hello_5
+    build: 
+      context: ./hello5
+    ports:
+      - "8004:8000"
+    volumes:
+      - ./hello5:/app/
 

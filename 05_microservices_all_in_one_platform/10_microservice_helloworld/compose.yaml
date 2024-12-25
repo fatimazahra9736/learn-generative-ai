@@ -1,0 +1,25 @@
+version: '3.9'
+
+name: myserver
+
+services:
+  api1:
+    container_name: helloworld_1
+    build: 
+      context: ./fastapi_helloworld
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastapi_helloworld:/code/
+
+  api2:
+    container_name: helloworld_2
+    build: 
+      context: ./fastapi_helloworld_online
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./fastapi_helloworld_online:/code/
+    
